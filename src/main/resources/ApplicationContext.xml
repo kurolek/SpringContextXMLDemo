@@ -14,7 +14,12 @@
 		<!-- getTool/setTool -->
 		<!-- <property name="tool" ref="plow"></property> -->
 	</bean>
-	
+
+	<bean id="cavalry_unit" class="builder.Unit">
+		<constructor-arg type="interfaces.IPerson" ref="cavalry"></constructor-arg>
+		<constructor-arg type="interfaces.ITool" ref="spear"></constructor-arg>
+	</bean>
+
 	<!-- Value types constructor n properties -->
 	<bean id="warrior_unit2" class="builder.Unit">
 		<!-- Unit(String _nationality, int _level) -->
@@ -65,7 +70,10 @@
 
 	<bean id="peasant" class="implementations.Peasant"></bean>
 	<bean id="warrior" class="implementations.Warrior"></bean>
+	<bean id="horseman" class="implementations.Horseman"></bean>
+	<bean id="cavalry" class="implementations.Cavalry"></bean>
 	
 	<bean id="sword" class="implementations.Sword"></bean>
 	<bean id="plow" class="implementations.Plow"></bean>
+	<bean id="spear" class="implementations.Spear"></bean>
 </beans>

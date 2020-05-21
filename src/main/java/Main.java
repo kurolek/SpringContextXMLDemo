@@ -15,7 +15,11 @@ public class Main {
 		warriorUnit.show();
 		warriorUnit.say("Hello");
 		warriorUnit.testActions();
-		
+
+		Unit cavalryUnit = (Unit) context.getBean("cavalry_unit");
+		cavalryUnit.show();
+		cavalryUnit.say("Hello");
+		cavalryUnit.testActions();
 		/*Unit warriorUnit2 = (Unit) context.getBean("warrior_unit3");
 		Unit warriorUnitPrototype = (Unit) context.getBean("warrior_unit3_prototype");
 		Unit warriorUnitPrototype2 = (Unit) context.getBean("warrior_unit3_prototype");
